@@ -1,0 +1,26 @@
+### GET request to example server
+#GET https://examples.http-client.intellij.net/get
+#    ?generated-in=PyCharm
+
+POST http://localhost:8001/antifraud/check
+
+Content-Type: application/json
+
+{
+  "birth_date": "2000-12-12",
+  "phone_number": "89234535452",
+  "loans_history": [
+    {
+      "amount": 123413,
+      "loan_data": "2023-12-12",
+      "is_closed": true
+    },
+{
+      "amount": 123413,
+      "loan_data": "2023-12-12",
+      "is_closed": false
+    }
+  ]
+}
+
+###
